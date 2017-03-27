@@ -94,7 +94,7 @@ public class Controller implements Initializable {
         try {
             if (loginmodel.login(userid, userpass)) {
                 lblstatus.setText("Welcome Back!");
-                (Stage)(((Button)event.getSource()).getScene().getWindow())).close();
+                (Stage)(((Button)event.getSource()).getScene().getWindow()).close();
 
                 try {
                     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/sample/editor.fxml"));
